@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 50;
   padding: 0;
   background-color: #000;
   color: #0aff0a;
@@ -12,8 +12,16 @@ header {
   border-bottom: 1px solid #00ff00;
 }
 
+.title {
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   text-shadow: 0 0 10px #00ff00;
 }
 
@@ -42,13 +50,18 @@ nav a:hover {
 
 article {
   margin-bottom: 3rem;
-  border-bottom: 1px solid #00ff00;
+  border-bottom: 1px solid #007c00;
   padding-bottom: 1rem;
+}
+
+hr {
+  border-bottom: 1px solid #00ff00;
 }
 
 article h2 {
   color: #00ff88;
   text-shadow: 0 0 5px #00ff88;
+  font-size: 30px;
 }
 
 footer {
