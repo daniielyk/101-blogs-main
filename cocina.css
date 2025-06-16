@@ -1,0 +1,74 @@
+:root {
+  --bg: #fff8f0;
+  --primary: #e26009;
+  --secondary: #ffdab5;
+  --text: #3e3e3e;
+  --radius: 10px;
+  --font-title: 'Georgia', serif;
+  --font-body: 'Segoe UI', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background-color: var(--primary);
+  color: white;
+  padding: 40px 20px;
+  border-radius: var(--radius);
+  margin-bottom: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #5c2500;
+}
+.recetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.receta {
+  background-color: var(--secondary);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.receta:hover {
+  transform: translateY(-5px);
+}
+
+.receta h2 {
+  color: var(--primary);
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 600px;
+  color: #999;
+  font-size: 0.9rem;
+}
